@@ -1,10 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<body bgcolor="#3084FF">
+<!body bgcolor="#3084FF">
 <h2><p style ="color: white;font-size: 50px;text-align:center;font-family:tahoma"> До летней распродажи осталось: <h1></p1>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+  body {background: rgb(63,94,251);
+      background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);}
+  a {
+  color: hotpink;
+  font-size: 50px;
+  text-align: center;
+  font-family: tahoma;
+}
+.aligncenter {  
+  text-align: center;
+}
+
+
 p {
   text-align: center;
   font-size: 50px;
@@ -18,10 +32,14 @@ p {
 <body>
 
 <p id="demo"></p>
+<div class="aligncenter">  
+  <a target="_blank" href="images/amogussound.mp3"><img src="images/amogus.gif" align="center" alt="Наажми на меня!" height="300" width="" ></a> 
+</div>  
+<p id="demo2"></p>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 23, 2022 19:59:59").getTime();
+var countDownDate = new Date("June 23, 2022  20:00:00").getTime(); // June 23, 2022 20:00:00
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -45,7 +63,11 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Начинается распродажа!";
+    
+    document.getElementById("demo").innerHTML = "Распродажа началась! <img align='center' src='images/47tv.gif'>";
+    document.getElementById("demo2").innerHTML = "<a href='https://store.steampowered.com/?l=russian' target='_blank' >Перейти";
+
+
   }
 }, 1000);
 </script>
