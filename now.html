@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер</title>
+    <link rel="icon" href="/images/newlogo.ico" type="">
+    <link rel="stylesheet" href="/css/header_footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css//responsive/header_footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css/timer.css" type="text/css" />
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img class="logo" src="/images/newlogo.png" alt="Logo" />
+            <img class="burgerIcon" src="/images/burger-icon.png" alt="menu" />
+        <nav class="menu">
+                <a class="" href="https://gamehunter.tk">Главная</a>
+                <a class='' href="timer.html">Таймер</a>
+                <a class="active" href="now.html">Текущая распродажа</a>
+                <a href="contact.html">Контакты</a>
+                <a href="bio.html">О нас</a>
+                
+        </nav>
+            
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="zxc">
+        <h1 class="notnow">ЕЩЕ НЕ НАЧАЛАСЬ</h1>
+        <p>Летняя Распродажа заканчивается через:</p>
+        <p id="demo"></p>
+</div>  
+<p id="demo2"></p>
+<div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("June 30, 2022  20:00:00").getTime(); // June 23, 2022 20:00:00
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " дней " + hours + " ч. "
+  + minutes + " м. " + seconds + " сек";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    
+    document.getElementById("demo").innerHTML = "Данная распродажа была окончена, спасибо за внимание!";
+    document.getElementById("demo2").innerHTML = "<a href='' target='_blank' class='next'>";
+
+
+  }
+}, 1000);
+</script>
+<div class="morespace">
+    
+</div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer class="container-fluid">
+        <div class="container d-flex">
+            <div class="left d-flex">
+                <figure class="figure">
+                    <img src="/images/footericon.png" alt="Logo" />
+                    <figcaption>Игровая индустрия скидок</figcaption>
+                </figure>
+                <nav >
+                    <a class='' href="https://gamehunter.tk">Главная</a>
+                    <a class='' href="timer.html">Таймер</a>
+                    <a class='active' href="now.html">Текущая распродажа</a>
+                    <a href="contact.html">Контакты</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    
+                    <a href="bio.html">О нас</a>
+                
+                    
+                </nav>
+            </div>
+            <div class="right">
+                <p>Следите за нами в соц. сетях:</p>
+                <a target="_blank" href="https://discord.com/invite/9MDqu5jCKq" class="box discord"></a>
+                <a target="_blank" href="https://t.me/tothemoongg" class="box telegram"></a>
+                <a target="_blank" href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' class="box vk"></a>
+            </div>
+        </div>
+        <div class="container copyrights">
+            <p>Все права защищены. &copy; 2022</p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>
