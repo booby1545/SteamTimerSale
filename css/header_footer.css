@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: opensans;
+    font-weight: normal;
+    font-style: normal;
+    src:url("/site/fonts/OpenSans-Regular.ttf")
+}
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    font-style: normal;
+    src:url("/site/fonts/OpenSans-SemiBold.ttf")
+}
+.container-fluid {
+    width: 100%;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 150px;
+    margin-right: 130px;
+    pointer-events: none;
+}
+
+body {
+    font-family: "opensans", Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+header > .container {
+    padding: 40px 20px;
+}
+header .container .menu a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #4b4b4e;
+    margin: 0 40px;
+
+}
+header .container .menu a:hover,
+header .container .menu a.active {
+    color: #dfa52b;
+    font-weight: 600;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #ebb217;
+    border-radius: 5px;
+}
+header form div {
+    justify-content: center;
+    padding: 15px 5px;
+    border: 1px solid #ebb217;
+    border-radius: 50px;
+    width: 300px;
+}
+header .burgerIcon {
+    width: 40px;
+    display:none;
+    margin: 0!important;
+}
+
+footer {
+    background-color:#4b4b4e;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+footer .left{
+    align-items: flex-start;
+}
+footer .left figure figcaption {
+    color: #f3f3f3;
+    font-size: 0,875em;
+    margin-top: 25px;
+    width: 150px;
+}
+
+footer .left nav {
+    margin-right: 100px;
+}
+
+footer .left nav a {
+    display: block;
+    font-size: 0,876em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+footer .left nav a:hover, footer .left nav a.active {
+    color: #dfa52b;
+}
+footer .right p {
+    text-align: center;
+    font-size: 0.876em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 33px;
+    margin-bottom: 15px;
+     
+}
+
+
+footer .right .box {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 16px 16px 0;
+
+}
+
+footer .right .discord {
+    background: url("/images/discord.png") no-repeat;
+    background-size: cover;
+}
+footer .right .discord:hover {
+    background: url("/images/discord-hover.png") no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+
+footer .right .telegram {
+    background: url("/images/telegram.png") no-repeat;
+    background-size: cover;
+}
+footer .right .telegram:hover {
+    background: url("/images/telegram-hover.png") no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+
+footer .right .vk {
+    background: url("/images/vk.png") no-repeat;
+    background-size: cover;
+}
+footer .right .vk:hover {
+    background: url("/images/vk-hover.png") no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+
+footer .copyrights {
+    text-align:center;
+    color:#f3f3f3;
+    font-size: 0,750em;
+    margin-top: 60px;
+}

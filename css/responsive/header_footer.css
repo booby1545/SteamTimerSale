@@ -1,0 +1,161 @@
+/*
+>=1200
+992 - 1199
+768 - 991
+576 - 768
+460 - 576
+414 - 460
+375 - 414
+320 - 375
+*/
+
+@media screen and (max-width: 1199px) {
+    header form div{
+        width: 238px;
+    }
+}
+@media screen and (max-width: 991px) {
+    header > .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+    footer .right form div {
+        height: 280px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    header .menu {
+        margin: 15 0;
+    }
+
+    footer .container{
+        flex-wrap: wrap;
+    }
+    footer.right {
+        margin: 20px auto 0px;
+    }
+    footer .copyrights {
+        margin-top: 18px;
+    }
+    footer .figure {
+        margin-left:30px;
+    }
+    footer .right {
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    header form div {
+        width: 240px;
+    }
+    header .burgerIcon {
+        display:inline-block;
+    }
+    header .container .menu {
+        display:none
+    }
+    header .container .menu a {
+        margin: 0 10px;
+        display:block;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+    header .container .menu a:hover, header .container .menu a.active {
+        border:none
+        margin-top: 17px;
+        margin-bottom: 17px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 460px) {
+    header .burgerIcon {
+        margin-left: 50px;
+    }
+    header .container-fluid{
+        width: 121%;
+    }
+    footer .left nav {
+        margin:auto auto;
+    }
+    footer .left {
+        display: block;
+    }
+    header form{
+        margin-right: 0!important;
+    }
+    footer .left {
+        display: block;
+    }
+    footer .left figure figcaption {
+        width: auto;
+    }
+    footer .left figure {
+        text-align: center;
+    }
+    footer .left nav {
+        margin-left:50px;
+        margin-top:50px;
+    }
+    footer form{
+        margin-right: 0!important;
+    }
+    
+}
+@media screen and (max-width: 378px) {
+    header .burgerIcon {
+        margin-left: 50px;
+    }
+    header .container-fluid{
+        width: 121%;
+    }
+    footer .left nav {
+        margin:auto auto;
+    }
+    footer .left {
+        display: block;
+    }
+    header form{
+        margin-right: 0!important;
+    }
+    footer .left {
+        display: block;
+    }
+    footer .left figure figcaption {
+        width: auto;
+    }
+    footer .left figure {
+        text-align: center;
+    }
+    footer .left nav {
+        margin-left:50px;
+        margin-top:50px;
+    }
+    footer form{
+        margin-right: 0!important;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    header form{
+        margin-right: 0!important;
+    }
+    footer .left {
+        display: block;
+    }
+    footer .left figure figcaption {
+        width: auto;
+    }
+    footer .left figure {
+        text-align: center;
+    }
+    footer .left nav {
+        margin-left:50px;
+        margin-top:50px;
+    }
+    footer form{
+        margin-right: 0!important;
+    }
+}
