@@ -1,0 +1,21 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+
+  }
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    }
